@@ -28,18 +28,18 @@ mycursor.execute("Use bizcard_01")
 mycursor.execute("CREATE TABLE IF NOT EXISTS card_data (id INTEGER PRIMARY KEY AUTO_INCREMENT,company_name TEXT,card_holder TEXT,designation TEXT,mobile_number VARCHAR(50),email TEXT,website TEXT,area TEXT,city TEXT,state TEXT,pin_code VARCHAR(10),image LONGBLOB)")
 
 # SETTING PAGE CONFIGURATIONS
-st.set_page_config(page_title="BizCardX: Extracting Business Card Data with OCR",
+st.set_page_config(page_title=":red[BizCardX: Extracting Business Card Data with OCR]",
                    layout="wide",
                    initial_sidebar_state="expanded",
                    )
-st.markdown("BizCardX: Extracting Business Card Data with OCR", unsafe_allow_html=True)
+st.markdown(":red[BizCardX: Extracting Business Card Data with OCR]", unsafe_allow_html=True)
 
 selected_menu = st.sidebar.radio("Select an option", ("Upload & Extract","Modify"))
 
 # UPLOAD AND EXTRACT MENU
 if selected_menu == "Upload & Extract":
     st.markdown("### Upload a Business Card")
-    uploaded_card = st.file_uploader("For quick extraction of data prefer an image of size less than 10 MB", type=["png", "jpeg", "jpg"])
+    uploaded_card = st.file_uploader(":green[For quick extraction of data prefer an image of size less than 10 MB]", type=["png", "jpeg", "jpg"])
         
     if uploaded_card is not None:
         
