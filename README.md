@@ -1,3 +1,4 @@
+![Screenshot 2023-08-02 001427](https://github.com/PallaviLakhe22/BizCardX-Extracting-Business-Card-Data-with-OCR/assets/137708896/a2d2ebcf-4b7d-471f-be26-a7b09327be05)
 # BizCardX-Extracting-Business-Card-Data-with-OCR
 
 Approach:
